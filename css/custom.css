@@ -158,7 +158,11 @@ h4, h5 {
 
 .navbar-brand {
   font-size: 20px;
-  padding-right: 45px;
+  padding-right: 35px;
+}
+
+.navbar-nav {
+  padding-left: 10px;
 }
 
 .navbar-inverse .navbar-brand:hover {
@@ -185,7 +189,7 @@ h4, h5 {
   background-repeat: no-repeat;
   background-size: cover;
  /*force image a se contenir dans la div*/
-  background-position: right;
+  /*background-position: right;*/ /*force image a se contenir a gauche dans la div*/
   height: 500px;
   max-width: 100%;
 }
@@ -195,8 +199,13 @@ h4, h5 {
   margin-bottom: 0px;
   font-weight: bold;
   letter-spacing: 3px;
-  padding: 45px 10px 0 20px;
+  padding: 45px 10px 0 40px;
   color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.accroche h2 {
+  font-style: italic;
 }
 
 /** --------------------------------------------------------------------------
@@ -545,9 +554,14 @@ footer p {
   .navbar-inverse {
     font-size: 1.2em !important;
   }
+
 }
 
 @media all and (max-width: 767px) {
+.home {
+  background-position: right; /*force image a se contenir a gauche dans la div*/
+  }
+
   #competences {
     padding: 15px 5px;
     height: 100%;
@@ -608,18 +622,35 @@ footer p {
     bottom: 90px;
     right: 10px;
   }
-}
+
 
 .travaux {
   padding-top: 10px;
   padding-bottom: 10px;
   height: 100%;
   width: 100%;
-}
+  }
 
 .authors {
   margin-top: 5px;
+  }
 }
+
+@media all and (max-width: 480px) {
+  .accroche  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 45px 10px 0 10px;
+    /*font-size: 1.6em;*/
+    }
+  h1 {
+    font-size: 1.6em;
+    }
+  #myNavbar {
+    padding-left: 54px;
+  }
+}
+
  /** ---------------------------------------
   * Responsive SLIDER CONTENEDOR
   ----------------------------------------*/
