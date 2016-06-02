@@ -203,6 +203,7 @@ h4, h5 {
   color: #fff;
   font-size: 2em;
   text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.05em #333;
 }
 .accroche h2 {
   font-style: italic;
@@ -554,11 +555,17 @@ footer p {
   .navbar-inverse {
     font-size: 1.2em !important;
   }
+  .home {
+    max-width: 100%;
+    background-position: center;
+
+  }
 
 }
 
 @media all and (max-width: 767px) {
 .home {
+  max-width: 100%;
   background-position: right; /*force image a se contenir a gauche dans la div*/
   }
 
