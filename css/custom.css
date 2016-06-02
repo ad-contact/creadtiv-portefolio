@@ -190,7 +190,7 @@ h4, h5 {
   background-size: cover;
  /*force image a se contenir dans la div*/
   /*background-position: right;*/ /*force image a se contenir a gauche dans la div*/
-  height: 500px;
+  height: 550px;
   max-width: 100%;
 }
 
